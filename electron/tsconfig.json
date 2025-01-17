@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"], // Sử dụng ESM (ECMAScript Modules)
+    "target": "ESNext", // Cải thiện tính tương thích với ES Modules
+    "moduleResolution": "Node", // Giải quyết module theo chuẩn Node.js   // Bật chế độ interoperability với CommonJS
+    "allowSyntheticDefaultImports": true, // Cho phép nhập khẩu mặc định trong ESM
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "types": ["node", "electron"],
+    "jsx": "react", // Transforms JSX into `React.createElement` syntax
+    "jsxFactory": "React.createElement", // Explicitly define the JSX factory if necessary
+    "rootDir": "."
+  },
+  "include": ["**/*.ts"]
+}
